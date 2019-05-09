@@ -27,6 +27,7 @@ def test_sdist_with_symlinks():
     link_file.mksymlinkto(link_target, absolute=False)
 
     expected_content = [
+        'hello-1.2.3/MANIFEST.in',
         'hello-1.2.3/README',
         'hello-1.2.3/setup.py',
         'hello-1.2.3/VERSION',
